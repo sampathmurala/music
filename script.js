@@ -12,7 +12,7 @@ const volBtn =document.querySelector("#vol-btn");
 
 
 // Song titles
-const songs = ['janani','Yemaiundacho', 'Meri Jaan Telugu', 'Rowdy-Boys']
+const songs = ['Janani','Yemaiundacho', 'Meri Jaan Telugu', 'Rowdy-Boys']
 let previos_value=0;
 
 // Keep track of songs
