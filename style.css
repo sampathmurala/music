@@ -180,3 +180,15 @@ body{
     }
 
 }
+
+.play-list{
+ 		position: absolute;
+ 		right: 50px;
+		display: flex; 
+ 		border: solid;
+ } 
+
+ .play-list li{
+ 	padding: 10px; 
+ 	list-style-type: numbers;
+ }
