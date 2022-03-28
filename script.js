@@ -9,6 +9,7 @@ const title = document.querySelector('#title');
 const cover = document.querySelector('#cover');
 const volumeSlider = document.querySelector("#volume-control");
 const volBtn =document.querySelector("#vol-btn");
+const liTags = document.querySelectorAll(".play-list ul li a");
 
 
 // Song titles
@@ -110,6 +111,12 @@ function volumeChange(e) {
  
 }
 
+function playThisSong(e) {
+	// body...
+	loadSong(this.innerHTML);
+	playSong()
+}
+
 //Change volume events
 volumeSlider.addEventListener("change", volumeChange)
 
@@ -140,3 +147,10 @@ audio.addEventListener('timeupdate', updateProgress)
 audio.addEventListener('ended', nextSong)
 
 progressContainer.addEventListener('click', setProgress)
+
+liTags.forEach((item, i)=>{
+	console.log(i);
+
+	item.addEventListener('click',playThisSong);
+
+})
